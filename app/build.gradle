@@ -34,6 +34,16 @@ android {
     sourceSets {
         main {
             getByName("main").java.srcDirs("build/generated/source/navigation-args")}}
+
+    //    Para los build de los recycleViews
+    //    generar las clases biuld para las recycleV
+    //sirve para declararlo al inicio con lateinit var para el ingreso de las id del xml y su uso
+    //hace regerencia a todos los elemetos dentro del xml
+    buildFeatures{
+        viewBinding true
+    }
+
+
 }
 
 dependencies {
@@ -55,6 +65,7 @@ dependencies {
     //Navigations Components
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
+
 
 
 

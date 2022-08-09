@@ -4,26 +4,26 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:orientation="vertical">
 
     <TextView
+        android:layout_margin="2dp"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tv On The Air"
+        android:text="Similar Movies"
         android:textSize="20sp"
         android:fontFamily="@font/p_b"
         />
+
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_tv_air"
+        android:id="@+id/rv_tv_popular"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="160dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_tv_air"
-
+        tools:listitem="@layout/item"
+        android:layout_marginTop="2dp"
         />
-
-
-
 </LinearLayout>

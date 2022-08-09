@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.MainFragment">
+    tools:context=".ui.MainFragment"
+    android:layout_margin="8dp">
 
-    <!--loading para el main fragment-->
 
     <RelativeLayout
         android:id="@+id/progress_bar_main"
@@ -27,13 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/tv_on_the_air"
+        tools:listitem="@layout/popular_tv_row"
         />
-
-
-
-
-
 
 
 
